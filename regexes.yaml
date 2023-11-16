@@ -216,8 +216,12 @@ user_agent_parsers:
   - regex: '(Twitter for (?:iPhone|iPad)|TwitterAndroid)(?:\/(\d+)\.(\d+)|)'
     family_replacement: 'Twitter'
 
+  # ecosia App
+  - regex: 'Mozilla.{1,200}Mobile.{1,100}Ecosia (ios|android).(\d+)\.(\d+)\.(\d+)'
+    family_replacement: 'Ecosia'
+
   # Phantom app
-  - regex: 'Mozilla.{1,200}Mobile.{1,100}(Phantom\/ios|android).(\d+)\.(\d+)\.(\d+)'
+  - regex: 'Mozilla.{1,200}Mobile.{1,100}Phantom\/(ios|android).(\d+)\.(\d+)\.(\d+)'
     family_replacement: 'Phantom'
 
   # aspiegel.com spider (owned by Huawei, later called PetalBot)
