@@ -3,6 +3,8 @@ uap-core [![Build Status](https://secure.travis-ci.org/ua-parser/uap-core.svg?br
 
 This repository contains the core of [BrowserScope][2]'s original [user agent string parser][3]: data collected over the years by [Steve Souders][4] and numerous other contributors, extracted into a separate [YAML file][5] so as to be reusable _as is_ by implementations in any programming language.
 
+In particular, this repository contains' [fraud0](https://www.fraud0.com/)'s fork of the original uap-core repository with any kind of fixes applied to it that were found to be useful for our work.
+
 This repo itself does _not_ contain a parser: only the necessary data to build one. There exists a ref implementation, along with multiple, production-ready implementations in various programming languages.
 
 Maintainers
@@ -11,6 +13,10 @@ Maintainers
 * [Com Menthol](https://github.com/commenthol)
 * [Lindsey Simon](https://github.com/elsigh) ([@elsigh](https://twitter.com/elsigh))
 * [Tobie Langel](https://github.com/tobie) ([@tobie](https://twitter.com/tobie))
+
+fraud0 fork:
+
+* [Andreas Krennmair](https://github.com/akrennmair)
 
 Communication channels
 -----------------------
