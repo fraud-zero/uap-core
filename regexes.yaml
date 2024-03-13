@@ -1034,6 +1034,9 @@ user_agent_parsers:
   - regex: 'SerenityOS'
     family_replacement: 'SerenityOS Browser'
 
+  - regex: '^Mozilla/5.0 \(compatible; Optimizer\)$'
+    family_replacement: 'SISTRIX Optimizer'
+
 os_parsers:
   ##########
   # HbbTV vendors
