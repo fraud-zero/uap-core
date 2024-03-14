@@ -463,6 +463,24 @@ user_agent_parsers:
   - regex: '(Ecosia) android@(\d+)\.(\d+)\.(\d+)\.(\d+)'
     family_replacement: 'Ecosia Android'
 
+  # Chrome-Lighthouse Mobile
+  - regex: '(Chromium|Chrome)/(\d+)\.(\d+)(?:\.(\d+)|)(?:\.(\d+)|) Mobile.{1,100}Chrome-Lighthouse'
+    family_replacement: 'Chrome-Lighthouse Mobile'
+
+  # Chrome-Lighthouse 
+  - regex: '(Chromium|Chrome)/(\d+)\.(\d+)(?:\.(\d+)|)(?:\.(\d+)|) .{1,100}Chrome-Lighthouse'
+    family_replacement: 'Chrome-Lighthouse'
+
+  # RuxitSynthetic
+  - regex: '(RuxitSynthetic)/(\d+)\.(\d+)'
+
+  # SkypeUriPreview
+  - regex: '(SkypeUriPreview) Preview/(\d+)\.(\d+)'
+
+  # Oracle Service Cloud Link Checker
+  - regex: '(OSvCLinkChecker)/(\d+)\.(\d+)'
+    family_replacement: 'Oracle Service Cloud Link Checker'
+
   # Chrome Mobile
   - regex: 'Version/.{1,300}(Chrome)/(\d+)\.(\d+)\.(\d+)\.(\d+)'
     family_replacement: 'Chrome Mobile WebView'
@@ -612,6 +630,10 @@ user_agent_parsers:
   # Vivaldi uses "Vivaldi"
   - regex: '(Vivaldi)/(\d+)\.(\d+)\.(\d+)'
 
+  # Headless Chrome
+  # https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md
+  - regex: '(HeadlessChrome)(?:/(\d+)\.(\d+)\.(\d+)|)'
+
   # Edge/major_version.minor_version
   # Edge with chromium Edg/major_version.minor_version.patch.minor_patch
   - regex: '(Edge?)/(\d+)(?:\.(\d+)|)(?:\.(\d+)|)(?:\.(\d+)|)'
@@ -628,10 +650,6 @@ user_agent_parsers:
   # Dolphin Browser
   # @ref: http://www.dolphin.com
   - regex: '\b(Dolphin)(?: |HDCN/|/INT\-)(\d+)\.(\d+)(?:\.(\d+)|)'
-
-  # Headless Chrome
-  # https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md
-  - regex: '(HeadlessChrome)(?:/(\d+)\.(\d+)\.(\d+)|)'
 
   # Evolution Mail CardDav/CalDav integration
   - regex: '(Evolution)/(\d+)\.(\d+)\.(\d+\.\d+)'
