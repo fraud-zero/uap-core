@@ -474,6 +474,10 @@ user_agent_parsers:
   # RuxitSynthetic
   - regex: '(RuxitSynthetic)/(\d+)\.(\d+)'
 
+  # adbeat
+  - regex: '^Mozilla.{1,100}adbeat\.com/policy'
+    family_replacement: 'Adbeat Bot'
+
   # SkypeUriPreview
   - regex: '(SkypeUriPreview) Preview/(\d+)\.(\d+)'
 
