@@ -483,7 +483,10 @@ user_agent_parsers:
     family_replacement: 'SpeedCurve'
 
   # YaDirectFetcher
-  - regex: 'YaDirectFetcher/(\d+)\.(\d+)'
+  - regex: '(YaDirectFetcher)/(\d+)\.(\d+)'
+
+  # Google Web Preview
+  - regex: '^.{1,100}(Google Web Preview).{1,10}Chrome/(\d+).(\d+).(\d+)'
 
   # SkypeUriPreview
   - regex: '(SkypeUriPreview) Preview/(\d+)\.(\d+)'
