@@ -478,6 +478,10 @@ user_agent_parsers:
   - regex: '^Mozilla.{1,100}adbeat\.com/policy'
     family_replacement: 'Adbeat Bot'
 
+  # PTST/SpeedCurve
+  - regex: '^Mozilla.{1,300}PTST/SpeedCurve/'
+    family_replacement: 'SpeedCurve'
+
   # SkypeUriPreview
   - regex: '(SkypeUriPreview) Preview/(\d+)\.(\d+)'
 
