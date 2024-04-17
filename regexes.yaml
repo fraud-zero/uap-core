@@ -482,6 +482,9 @@ user_agent_parsers:
   - regex: '^Mozilla.{1,300}PTST/SpeedCurve/'
     family_replacement: 'SpeedCurve'
 
+  # YaDirectFetcher
+  - regex: 'YaDirectFetcher/(\d+)\.(\d+)'
+
   # SkypeUriPreview
   - regex: '(SkypeUriPreview) Preview/(\d+)\.(\d+)'
 
