@@ -545,6 +545,9 @@ user_agent_parsers:
   # Podcast catcher Applications using iTunes
   - regex: '(PodCruncher|Downcast)[ /]?(\d+)(?:\.(\d+)|)(?:\.(\d+)|)(?:\.(\d+)|)'
 
+  - regex: '^Mozilla/5\.0.* (ADG)/(\d+).(\d+).(\d+)'
+    family_replacement: 'AOL Desktop Gold'
+
   # Box Notes https://www.box.com/resources/downloads
   # Must be before Electron
   - regex: ' (BoxNotes)/(\d+)\.(\d+)\.(\d+)'

@@ -8814,3 +8814,9 @@ test_cases:
     major: '122'
     minor: '0'
     patch: '6261'
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.130 ADG/11.1.4616 Safari/537.36'
+    family: 'AOL Desktop Gold'
+    major: '11'
+    minor: '1'
+    patch: '4616'
